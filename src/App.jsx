@@ -8,7 +8,7 @@ import Home from './Home'
 
 function App() {
   return (
-    <Router>
+    <Router basename="/Movie-app"  >
       <Routes>
         <Route path="/" element={<Home />} />
         {/* Add more routes here as your app grows */}

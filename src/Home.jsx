@@ -1,5 +1,5 @@
 import spidermanImg from './assets/spider.jpg'
-import netflixImg from './assets/netflix-logo.png'
+import netflixImg from './assets/Netflix.png'
 import profileImg from './assets/profile.png'
 import { useState } from "react";
 

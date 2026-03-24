@@ -10,6 +10,7 @@ import EpisodeSlider from './scroll'
 // import Slider from './Slide'
 import Slide from './Slide';
 import Slider from './Slider';
+import Adventure from './Advent.jsx';
 
 
 
@@ -137,7 +138,7 @@ const [active, setActive] = useState(0);
 </div>
 <div className='px-15 '>
 <h1 className='text-2xl font-bold'>Adventure Movies </h1>
-<Slider/>
+<Adventure/>
 </div>
 
 </div>

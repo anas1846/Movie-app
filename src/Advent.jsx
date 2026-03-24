@@ -1,16 +1,22 @@
 import { useEffect, useRef, useState } from "react";
+import avengerImg from './assets/avenger.jpg'
+import bestImg from './assets/30bd49152683227.632229964dd85.webp'
+import BestImg from './assets/6PdfTtBf34zc5Npa.jpg'
+import electricImg from './assets/wp11051368.jpg'
+import remorseImg from './assets/i-frankenstein.jpeg'
 
-export default function MovieSlide() {
+
+export default function MovieSlider() {
 
   const sliderRef = useRef(null);
   const [index, setIndex] = useState(0);
 
   const data = [
-    { title: "Blackbird", episode: "S04 EP03", img: "https://picsum.photos/800/500?1" },
-    { title: "La familia", episode: "S01 EP06", img: "https://picsum.photos/800/500?2" },
-    { title: "The Detective", episode: "S02 EP02", img: "https://picsum.photos/800/500?3" },
-    { title: "Dark World", episode: "S03 EP01", img: "https://picsum.photos/800/500?4" },
-    { title: "Lost City", episode: "S02 EP08", img: "https://picsum.photos/800/500?5" }
+    { title: "Blackbird", episode: "S04 EP03", img:avengerImg },
+    { title: "La familia", episode: "S01 EP06", img: bestImg },
+    { title: "The Detective", episode: "S02 EP02", img: BestImg },
+    { title: "Dark World", episode: "S03 EP01", img: electricImg },
+    { title: "Lost City", episode: "S02 EP08", img: remorseImg  }
   ];
 
   const sliderData = [...data, data[0]];
@@ -76,9 +82,7 @@ export default function MovieSlide() {
 
               {/* Play Button */}
               <div className="absolute inset-0 flex items-center justify-center">
-                <button className="bg-red-600 text-white px-6 py-2 rounded-full opacity-80 hover:opacity-100">
-                  Play
-                </button>
+                
               </div>
 
               {/* Progress Line */}
